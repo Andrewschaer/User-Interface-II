@@ -1,1 +1,139 @@
-/* Add CSS styling here */
+/* CSS E-M RESET MINUS BODY AND BORDER */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* UNIVERSAL STYLES */
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    max-width: 100%;
+    border: 1px solid grey;
+}
+/* GENERAL STYLES */
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: ;
+    color: ;
+    font-family: ;
+    /* !!!! COME BACK AND FILL */
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+h1,h2,h3,a{
+    text-align: center;
+}
+h1{
+    font-size: 7rem;
+    color: grey;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 1.4rem;
+}
+a{
+    font-size: 2rem;
+    padding: 0, auto;
+    text-decoration: none;
+    color: black;
+    border: 1.5px solid black;
+
+}
+
+/* HEADER STYLES */
+header{
+    display:flex;
+    justify-content: space-between;
+}
+nav{
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 33%;
+}
+nav a{
+    width: 24%;
+}
+
+/* MAIN STYLES */
+.core{
+    height: 60vh;
+    width: 90%;
+    margin: 2% auto;
+    background-image: url(https://images.unsplash.com/photo-1519262558424-85f09f65d09b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.core a{
+    background-color: rgb(48, 20, 20);
+    font-size: 3rem;
+    color: grey;
+    width: 20%;
+}
+
+/* PROJECT STYLES */
+.projects{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.projects div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 2% 1%;
+}
+.dog{
+    background-image: url(https://images.unsplash.com/photo-1531601609256-2e78caf7af67?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80);
+    
+
+}
+
+/* FOOTER STYLES */
+
