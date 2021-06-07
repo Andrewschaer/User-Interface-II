@@ -44,40 +44,35 @@ table {
     margin:0;
     padding:0;
     max-width: 100%;
+    /* border: 1px dashed yellow; */
 }
 /* GENERAL STYLES */
 html{
     font-size: 62.5%;
 }
 body{
-    background-color:rgb(15, 0, 15) ;
+    background-color:rgb(15, 0, 15);
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    /* !!!! COME BACK AND FILL */
-    font-size: 1.2rem;
+    font-size: 2rem;
     line-height: 1.5;
-}
-h1,h2,a{
-    text-align: center;
     color: rgb(170, 169, 169);
+    text-align: center;
 }
+
 h1{
     font-size: 7rem;
     font-family: 'Rock Salt', cursive;
+    padding: 2%;
 }
 h2{
     font-size: 3rem;
     padding: 2%;
 }
-h3{
-    font-size: 2rem;
-    color: grey;
-}
 a{
-    font-size: 2rem;
-    padding: 0, auto;
     text-decoration: none;
     border: 1.5px solid rgb(82, 82, 82);
+    color: rgb(170, 169, 169);
 }
 
 /* HEADER STYLES */
@@ -87,12 +82,14 @@ header{
 }
 nav{
     display:flex;
-    justify-content:flex-start;
+    justify-content:flex-end;
     align-items: center;
-    width: 33%;
+    width: 60%;
+    padding-right: 2%;
 }
 nav a{
-    width: 24%;
+    transition: 0.2s;
+    padding: 0 5%;
 }
 nav a:hover{
     background-color:whitesmoke;
@@ -104,10 +101,10 @@ nav a:hover{
     width: 90%;
     margin: 2% auto;
     background-image: url(https://images.unsplash.com/photo-1519262558424-85f09f65d09b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80);
+    background-size: cover;
     border-radius: 25px;
     background-repeat: no-repeat;
-    background-size:110%;
-    background-position: 0% 100%;
+    background-position:center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,12 +113,14 @@ nav a:hover{
 .core a{
     background-color: rgb(27, 12, 12);
     font-size: 3rem;
-    color: grey;
-    width: 20%;
     border-radius: 17px;
+    padding: 0 5%;
+    margin: 2%;
+    transition: 0.2s;
 }
 .core a:hover{
     background-color:whitesmoke;
+    color: rgb(27, 12, 12);
 }
 
 /* PROJECT STYLES */
@@ -138,43 +137,7 @@ nav a:hover{
     width: 32%;
     padding: 2% 1%;
 }
-.container div{
-    width: 100%;
-    height:20vh;
-    background-repeat: no-repeat;
-}
-.lapse{
-    background-image: url(https://images.unsplash.com/photo-1501722774607-350d98706b01?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1227&q=80);
-    background-size: 100%;
-    background-position: 100% 30%;
-    
-}
-.dog{
-    background-image: url(https://images.unsplash.com/photo-1531601609256-2e78caf7af67?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80);
-    background-size: 100%;
-    background-position: 100% 60%;
-}
-.ball{
-    background-image: url(https://images.unsplash.com/photo-1520236351980-16fbcb68e0e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2836&q=80);
-    background-size: 145%;
-    background-position: 50% 40%;
-}
 
-.trip{
-    background-image:url(https://images.unsplash.com/photo-1510020553968-30f966e1ec9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2767&q=80);
-    background-size: 120%;
-    background-position: 100% 20%;
-}
-.diet{
-    background-image:url(https://images.unsplash.com/photo-1481070555726-e2fe8357725c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
-    background-size: 100%;
-    background-position: 100% 60%;
-}
-.live{
-    background-image:url(https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2700&q=80);
-    background-size: 180%;
-    background-position: 50% 100%;
-}
 /* FOOTER STYLES */
 footer{
     height:8vh;
@@ -183,16 +146,66 @@ footer{
     justify-content: center;
 }
 .footerlinks{
-    width:33%;
+    width:40%;
     display:flex;
     justify-content: space-between;
     align-items: center;
 }
 .footerlinks a{
-    padding:2% 2%;
+    padding:2% 7%;
     background-color: rgb(78, 10, 78);
     border-radius: 15px;
+    transition: 0.2s;
 }
 .footerlinks a:hover{
     background-color:whitesmoke;
+}
+/* RESPONSIVE STYLES */
+@media(max-width:800px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        font-size: 4.5rem;
+    }
+    nav{
+        justify-content: center;
+    }
+    .core{
+        height: 30vh;
+    }
+    h1{
+        font-size:4.8rem;
+    }
+    .container{
+        width: 49%;  
+    }
+    .container img{
+        max-height: 25vh;
+    }
+    .footerlinks{
+        width: 50%;
+    }
+}
+@media(max-width:500px){
+    html{
+        font-size: 45%;
+    }
+    nav{
+        flex-direction: column;
+        font-size: 2.5rem;
+    }
+    nav a{
+        width: 40%;
+    }
+    .core{
+        height: 22vh;
+    }
+    .container img{
+        max-height: 20vh;
+    }
 }
