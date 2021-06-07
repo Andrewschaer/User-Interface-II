@@ -44,7 +44,7 @@ table {
     margin:0;
     padding:0;
     max-width: 100%;
-    border: 1px dashed yellow;
+    /* border: 1px dashed yellow; */
 }
 /* GENERAL STYLES */
 html{
@@ -63,6 +63,7 @@ body{
 h1{
     font-size: 7rem;
     font-family: 'Rock Salt', cursive;
+    padding: 2%;
 }
 h2{
     font-size: 3rem;
@@ -100,10 +101,10 @@ nav a:hover{
     width: 90%;
     margin: 2% auto;
     background-image: url(https://images.unsplash.com/photo-1519262558424-85f09f65d09b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80);
+    background-size: cover;
     border-radius: 25px;
     background-repeat: no-repeat;
-    background-size:110%;
-    background-position: 0% 100%;
+    background-position:center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,7 +149,7 @@ footer{
     justify-content: center;
 }
 .footerlinks{
-    width:33%;
+    width:40%;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -164,12 +165,34 @@ footer{
 }
 /* RESPONSIVE STYLES */
 @media(max-width:800px){
-    body{
-        background-color: blue;
+    html{
+        font-size: 55%;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav{
+        justify-content: center;
+    }
+    h1{
+        font-size:4.8rem;
+    }
+    .container{
+        width: 49%;
+    }
+    .footerlinks{
+        width: 50%;
     }
 }
 @media(max-width:500px){
-    body{
-        background-color: yellow;
+    html{
+        font-size: 45%;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav a{
+        width: 40%;
     }
 }
